@@ -1,0 +1,141 @@
+\documentclass[10pt]{relatorio_tcc_ads_ifba}
+\begin{document}
+
+% Aluno/autor do documento (obrigatório)
+% e.g. \aluno{Luiz Felipe Torres Farias}
+\aluno{Fulano de tal}
+
+% Titulo do seu projeto (obrigatório)
+% e.g. \titulo{Desenvolvimento de Software XPTO}
+\titulo{Titulo do Seu Projeto}
+
+% Data da sua defesa (obrigatório)
+% e.g. \date{21 de janeiro de 2024}
+\date{21 de janeiro de 2024}
+
+% Orientador (obrigatório)
+% Opção: [f] para orientadora. O valor default é [m]
+% e.g. \orientador[f]{Flavia Maristela}
+% e.g. \orientador{Frederico Barboza}
+\orientador[f]{Ciclana de tal}
+
+% Coorientador (opcional)
+% Opção: [f] para coorientadora. O valor default é [m]. Caso não possua coorientador, comentar ou deletar essa linha.
+% e.g. \orientador[f]{Flavia Maristela}
+% e.g. \orientador{Frederico Barboza}
+% \coorientador{NOME}
+\coorientador{Beltrano de tal}
+
+% Pretextual (obrigatório)
+% Comando responsável por imprimir o conteúdo pré-textual (capa e sumário)
+\pretextual
+
+% ---------------------------------------------------------------------
+% INÍCIO DA PARTE ESCRITA 
+% ---------------------------------------------------------------------
+\section{Visão geral }
+
+% Recomendo manter cada seção ou subseção de texto em um arquivo separado e depois utilizados com o comando include, conforme o exemplo a seguir. Porém, se preferir, também pode deixar seu texto neste arquivo
+\input{src/sections/objetivos}
+\input{src/sections/definicoes}
+
+\subsection{Declaração do Problema}
+\textcolor{blue}{
+    [Explique o problema que está sendo solucionado por este projeto. Descreva o contexto, o cenário do problema, explique porque resolveu trabalhar com ele no seu TCC. Descreva a motivação e Justificativa para trabalhar com este problema.]
+} \\
+\textcolor{red}{[Obrigatório]}
+
+\subsection{Proposta de Solução de Software}
+\textcolor{blue}{
+    [Descreva a solução de software em nível conceitual que está sendo desenvolvida para solucionar o problema proposto por este projeto. Como seu software é importante na solução do problema.]
+} \\
+\textcolor{red}{[Obrigatório]}
+
+\subsection{Tecnologias da solução}
+\textcolor{blue}{
+    [Descreva as tecnologias a serem utilizadas no desenvolvimento da solução de software que está sendo desenvolvida para solucionar o problema proposto por este projeto. Quais softwares, plataformas, ferramentas, linguagens, etc. Justifique suas escolhas.]
+} \\
+\textcolor{red}{[Obrigatório]}
+
+\section{Requisitos}
+
+\subsection{Requisitos Funcionais}
+\textcolor{blue}{
+    [Descreva os todos requisitos funcionais do sistema a ser desenvolvido. Utilize o formato de Histórias de Usuários. Por exemplo: Como um gerente de vendas, eu preciso saber quantos clientes minha loja atendeu hoje para eu possa redimensionar estratégias de vendas.]
+} \\
+\textcolor{red}{[Obrigatório]}
+
+\subsection{Requisitos Não-Funcionais}
+\textcolor{blue}{
+    Descreva os requisitos não-funcionais do sistema a ser desenvolvido. Utilize o formato de texto simples com identificação do requisito. Por exemplo: [RNF1] O sistema deve ser acessível nas plataformas web e mobile.]
+} \\
+\textcolor{red}{[Obrigatório]}
+
+\section{Design}
+\subsection{Projeto UML}
+\textcolor{blue}{
+    [Insira os seguintes Diagramas de UML para o seu projeto: 
+    \begin{enumerate}
+        \item Diagrama de Classe
+        \item Diagrama de Atividades da principal atividade do sistema
+        \item Diagrama de Sequência da principal atividade do sistema
+        \item Diagrama de Estado do principal objeto do sistema
+        \item Diagrama de Componentes
+        \item Diagrama de Implantação
+    \end{enumerate}
+    OBS: Como cada sistema tem particularidades específicas, a escolha de qual a principal atividade e qual o principal objeto do sistema deve ser discutida com o orientador. Consideramos que existem alguns diagramas básicos que devem existir em qualquer projeto. São eles: Diagrama de Classes, Componentes e Implantação. A elaboração dos outros diagramas devem ser discutidos com seu orientador.]
+} \\
+\textcolor{red}{
+    [Obrigatório - A seção é obrigatória, os diagramas de classes e diagrama de casos de uso são obrigatórios. Os outros diagramas são opcionais a depender do tipo do sistema a ser desenvolvido. Deve ser discutido com o orientador quais diagramas devem constar no trabalho.]
+}
+
+\subsection{Visão arquitetural}
+\textcolor{blue}{
+    [Descreva o estilo arquitetural que melhor se encaixa no seu sistema. Descreva a arquitetura de seu sistema, incluindo quais tecnologias utilizou na sua construção. Utilize figuras para ilustrar se necessário.]
+} \\
+\textcolor{red}{[Obrigatório]}
+
+\subsection{Modelo de Banco de Dados}
+\textcolor{blue}{
+    [Descreva o modelo de Dados Físico e Lógico]
+} \\
+\textcolor{red}{
+    [Obrigatório - Somente se o sistema possui banco de dados.]
+}
+
+\section{Qualidade}
+
+\subsection{Projeto de testes}
+\textcolor{blue}{
+    [Descreva em detalhes as estratégias de Testes que utilizou para desenvolvimento do seu software. Se utilizou casos de testes, testes automatizados ou manuais, ferramentas, etc.]
+} \\
+\textcolor{red}{[Obrigatório]}
+
+\section{Implantação}
+\subsection{Projeto de implantação}
+\textcolor{blue}{
+    [Descreva a Plataforma de Hardware e Software requeridas para instalação e operação do seu software.]
+} \\
+\textcolor{red}{[Obrigatório]}
+
+\section{Manual do Usuário}{
+\textcolor{blue}{
+    [Descreva o Manual de Usuário, como utilizar o seu software. Sugerimos que coloque figuras com as telas do seu sistema se necessário para melhorar o entendimento do usuário.]
+} \\
+\textcolor{red}{[Obrigatório]}
+}
+
+\section*{Agradecimentos}
+\textcolor{blue}{
+    [Agradecimentos a colaboradores do seu projeto]
+} \\
+\textcolor{red}{[Opcional]}
+
+\bibliography{referencias}
+\textcolor{blue}{
+    [Forneça uma lista completa de todos os documentos mencionados ou que foram utilizados como referência na elaboração deste documento. Todos os documentos devem ser identificados por título, data, nome e organização responsável por sua publicação. Especifique as fontes dessas referências. Utilize o padrão ABNT para o formato das referências.]
+} \\
+\textcolor{red}{[Obrigatório]} \\
+\textbf{[Dica: insira suas referencias no arquivo "referencias.bib" e utilize o comando "cite" para utilizá-la]}
+
+\end{document}
