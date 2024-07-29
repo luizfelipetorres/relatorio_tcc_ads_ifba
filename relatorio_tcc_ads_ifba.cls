@@ -23,7 +23,25 @@
 \RequirePackage{helvet} % Package with arial font 
 \RequirePackage{textcase} % Caso seja necessário alterar a caixa do texto
 \RequirePackage[num, abnt-repeated-title-omit=yes, abnt-emphasize=bf]{abntex2cite} % Utilizzado para as referências no padrão ABNT
+\RequirePackage{indentfirst} 
+\RequirePackage{hyperref}
+\RequirePackage[skip=10pt, indent=20pt]{parskip}
+\RequirePackage{setspace}
+\RequirePackage{titlesec}
 \citebrackets[] 
+
+% Define o tamanho das seções
+\titleformat{\section}
+{\normalfont\fontsize{19}{22}\selectfont\bfseries}{\thesection}{1em}{}
+
+% Define o tamanho das subsections
+\titleformat{\subsection}
+{\normalfont\fontsize{17}{20}\selectfont\bfseries}{\thesubsection}{1em}{}
+
+% Define o tamanho das subsubsections
+\titleformat{\subsubsection}
+{\normalfont\fontsize{14}{17}\selectfont\bfseries}{\thesubsubsection}{1em}{}
+
 
 % --- Constants
 \gdef\orientadorMasculino{Orientador}
@@ -88,8 +106,10 @@
         
         
     \end{center}
+
+    % Segunda página
+    \newpage
     \thispagestyle{empty}
-    \vspace*{\fill}
     \begin{center}
         \vskip 4em%
         Instituto Federal da Bahia - IFBA \\
@@ -100,10 +120,6 @@
         \@date
     \end{center}
 
-    % Página vazia
-    \newpage
-    \null
-    \thispagestyle{empty}
 
     % Sumário
     \newpage
@@ -113,5 +129,6 @@
     \setcounter{page}{1}
 }
 
+\setstretch{1.15} % Espaçamento entre linhas
 
 
